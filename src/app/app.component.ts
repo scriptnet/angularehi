@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { EhisService } from './services/ehis.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'free-io';
+
+  constructor ( public ehisService: EhisService)
+  {}
 }
